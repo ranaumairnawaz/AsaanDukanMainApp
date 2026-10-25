@@ -1,59 +1,108 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🛍️ AsaanDukan — Multi-Tenant E-Commerce SaaS Platform
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel" alt="Laravel 12">
+  <img src="https://img.shields.io/badge/Inertia.js-Vue%203-9553E9?style=for-the-badge&logo=inertia" alt="Inertia Vue">
+  <img src="https://img.shields.io/badge/TailwindCSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss" alt="TailwindCSS">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
 </p>
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📖 What is AsaanDukan?
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**AsaanDukan** is a cloud-ready, **multi-tenant e-commerce SaaS engine** built with **Laravel 12, Inertia.js, and Vue 3**. It allows independent entrepreneurs, retailers, and merchants to launch branded online digital storefronts in minutes under custom domains or automated subdomains.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The platform provides a centralized, multi-tenant administrative ecosystem alongside customizable customer-facing storefronts with shopping carts, coupon engines, order tracking, and payment gateways.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🎯 Why AsaanDukan? Problem & Solution
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| The Challenge | How AsaanDukan Solves It |
+| :--- | :--- |
+| **High Barrier to Entry:** Setting up bespoke e-commerce websites requires substantial engineering, server setup, and maintenance. | Provides instant self-service digital storefront provisioning with subdomains (`store.domain.com`) or custom vanity domains. |
+| **Monolithic Store Management:** Managing thousands of stores on isolated databases is difficult to scale and maintain. | Employs scalable multi-tenancy middleware that seamlessly isolates store data, settings, products, and analytics per tenant. |
+| **Poor Mobile Checkout UX:** Slow, multi-page page reloads lead to high cart abandonment rates. | Delivers a Single Page Application (SPA) experience powered by **Inertia.js and Vue 3** for fluid, app-like navigation and rapid order checkout. |
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🌟 Key Features
 
-### Premium Partners
+### 🛒 Customer Storefront Experience
+- **Fluid Single-Page Navigation:** Powered by Inertia.js & Vue 3 with seamless zero-reload transitions.
+- **Dynamic Product Showcase:** Multi-variant inventory, rich product descriptions, image galleries, and pricing badges.
+- **Smart Cart & Coupon Engine:** Instant discount computation, coupon code validation, and persistent cart sessions.
+- **One-Page Checkout:** Streamlined guest or customer checkout with shipping address validation and order notes.
+- **Live Order Tracking:** Public tracking terminal allowing customers to check fulfillment, dispatch, and delivery stages by order number.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 🏢 Multi-Tenant Architecture & Domain Engine
+- **Custom Domain Mapping:** Automatic resolution and SSL routing for custom merchant domains (`mybrand.com`).
+- **Subdomain Routing:** Dedicated path and subdomain handling (`{store}.asaandukan.com`).
+- **Subscription Lifecycle:** Tiered merchant subscription plans with automated expiration safeguards and feature gates.
 
-## Contributing
+### 🛡️ Super-Admin Command Center
+- **Merchant Management:** Provision, suspend, activate, and review store owners.
+- **Domain Approval Workflow:** Review vanity domain purchase/pointing requests and issue quotes.
+- **Plan & Subscription Billing:** Manage pricing tiers, payment receipt verification, and manual billing extensions.
+- **WhatsApp Broadcast Suite:** Send notifications, alerts, and promotional announcements directly to merchants.
+- **Admin Tenant Impersonation:** Secure 1-click admin login into merchant instances for technical troubleshooting.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🛠️ Technical Stack
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **Backend Framework:** Laravel 12.x (PHP 8.2+)
+- **Frontend Reactive Layer:** Inertia.js v2, Vue 3.4 (Composition API), Ziggy
+- **UI & Styling:** TailwindCSS v4, Autoprefixer, VueQuill Editor
+- **Database & Cache:** MySQL 8.0+ / MariaDB, Redis (Predis)
+- **Authentication:** Laravel Breeze, Laravel Sanctum
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🚀 Getting Started
 
-## License
+### 1. Prerequisites
+- PHP 8.2 or 8.3+ with extensions: `pdo_mysql`, `curl`, `mbstring`, `openssl`, `redis`
+- Composer 2.x
+- Node.js 18+ and NPM
+- MySQL 8.0+
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 2. Installation Steps
+```bash
+# Clone the repository
+git clone https://github.com/ranaumairnawaz/AsaanDukanMainApp.git
+cd AsaanDukanMainApp
+
+# Install backend dependencies
+composer install
+
+# Install frontend dependencies
+npm install
+
+# Configure environment
+cp .env.example .env
+php artisan key:generate
+```
+
+### 3. Database & Assets
+```bash
+# Run database migrations and seeders
+php artisan migrate --seed
+
+# Build frontend assets
+npm run build
+```
+
+### 4. Serve the Application
+```bash
+# Start local PHP server
+php artisan serve
+```
+
+---
+
+## 👨‍💻 Author
+**Rana Umair Nawaz**  
+- [GitHub Profile](https://github.com/ranaumairnawaz)  
+- [LinkedIn Profile](https://linkedin.com/in/ranaumairnawaz)
